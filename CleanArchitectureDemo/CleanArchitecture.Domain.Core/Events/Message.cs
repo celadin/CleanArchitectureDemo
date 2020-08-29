@@ -6,9 +6,9 @@ namespace CleanArchitecture.Domain.Core.Events
     {
         protected Message()
         {
-            Name = GetType().Name;
+            CommandName = GetType().Name;
         }
 
-        public string Name { get; protected set; }
+        public string CommandName { get; protected set; }
     }
 }
