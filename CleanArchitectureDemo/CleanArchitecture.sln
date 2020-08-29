@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Mvc", "CleanArchitecture.Mvc\CleanArchitecture.Mvc.csproj", "{84B407FF-FDFD-4EFC-8481-2FC8299AC9D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchtitecture.Domailn", "CleanArchtitecture.Domailn\CleanArchtitecture.Domailn.csproj", "{B3299756-E019-430F-B580-FA97036DB843}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Domain", "CleanArchtitecture.Domailn\CleanArchitecture.Domain.csproj", "{B3299756-E019-430F-B580-FA97036DB843}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
