@@ -1,0 +1,30 @@
+﻿@model CleanArchitecture.Application.ViewModels.CourseViewModel
+
+@{
+    ViewData["Title"] = "Course Page";
+    Layout = "_Layout";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model.Courses)
+        {
+            <tr>
+                <th scope="row">@course.Id</th>
+                <td>@course.Name</td>
+                <td>@course.Description</td>
+                <td>
+                    <img src="@course.ImageUrl" class="img-thumbnail" alt="@course.Description" style="width: 75px; height: 75px;">
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

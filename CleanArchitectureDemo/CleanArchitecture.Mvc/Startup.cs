@@ -69,7 +69,7 @@ namespace CleanArchitecture.Mvc
             {
                 endpoints.MapControllerRoute(
                     "default",
-                    "{controller=Home}/{action=Index}/{id?}");
+                    "{controller=Course}/{action=Index}");
                 endpoints.MapRazorPages();
             });
         }
