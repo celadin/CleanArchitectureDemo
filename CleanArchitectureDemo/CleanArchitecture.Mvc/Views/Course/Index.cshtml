@@ -1,4 +1,4 @@
-﻿@model CleanArchitecture.Application.ViewModels.CourseViewModel
+﻿@model IEnumerable<CleanArchitecture.Application.ViewModels.CourseViewModel>
 
 @{
     ViewData["Title"] = "Course Page";
@@ -15,7 +15,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var course in Model.Courses)
+        @foreach (var course in Model)
         {
             <tr>
                 <th scope="row">@course.Id</th>

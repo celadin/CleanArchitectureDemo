@@ -16,7 +16,7 @@ namespace CleanArchitecture.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] CreateCourseViewModel model)
+        public IActionResult Create([FromBody] CourseViewModel model)
         {
             _courseService.CreateCourse(model);
             return Ok();

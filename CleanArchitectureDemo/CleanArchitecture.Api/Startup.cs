@@ -1,3 +1,4 @@
+using CleanArchitecture.Api.Configurations;
 using CleanArchitecture.Infra.Data.Context;
 using CleanArchitecture.Infra.IoC;
 using MediatR;
@@ -42,6 +43,7 @@ namespace CleanArchitecture.Api
                 });
             });
 
+            services.RegisterMappings();
             RegisterServices(services);
         }
 

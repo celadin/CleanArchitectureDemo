@@ -1,10 +1,11 @@
-﻿using CleanArchitecture.Application.ViewModels;
+﻿using System.Collections.Generic;
+using CleanArchitecture.Application.ViewModels;
 
 namespace CleanArchitecture.Application.Interfaces
 {
     public interface ICourseService
     {
-        CourseViewModel GetCourses();
-        void CreateCourse(CreateCourseViewModel createCourseViewModel);
+        IEnumerable<CourseViewModel> GetCourses();
+        void CreateCourse(CourseViewModel createCourseViewModel);
     }
 }
